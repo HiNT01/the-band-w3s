@@ -139,8 +139,293 @@ html {
     color: #fff;
     text-align: center;
     padding: 64px calc((100% - 800px)/2);
-
+}
+#tour > span {
+    margin: 15px 0px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22px;
+    color: rgba(255,255,255,0.6);
+    font-style: italic;
+}
+#tour .list-month {
+    list-style: none;
+    margin-top: 30px;
     
+}
+#tour .list-month .item-month {
+    border-bottom: 1px solid gray;
+    display: flex;
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #000;
+}
+.list-month .item-month > span {
+    margin-right: 16px;
+    font-weight: 600;
+    font-size: 15px;
+     line-height: 22px;
+     color: rgba(0,0,0,0.6);
+}
+.list-month .item-month > div {
+    background-color: red;
+    padding: 0px 8px;
+    color: #fff;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 22px;
+}
+.list-month .item-month:last-child {
+    justify-content: space-between;
+}
+.list-month .item-month:last-child .count {
+    background-color: #000;
+    border-radius: 50%;  
+}
+#tour .list-ticket {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+#tour .list-ticket .item-ticket {
+    width: 32%;
+}
+#tour .list-ticket .item-ticket  > img {
+    width: 100%;
+    display: block;
+}
+#tour .list-ticket .item-ticket .content {
+    padding: 15px 16px;
+    background-color: #fff;
+    color: #000;
+}
+.list-ticket .item-ticket .content .title {
+    margin-bottom: 15px; 
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: left;
+}
+.item-ticket .content .date {
+    display: block;
+    margin: 15px 0px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    color: rgba(0,0,0,0.6);
+}
+.item-ticket .content > p {
+    margin: 15px 0px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+}
+.item-ticket .content .btn-buy {
+    text-align: left;
+    padding: 8px 16px;
+    background-color: rgba(0,0,0,1);
+    color: #fff;
+    text-transform: capitalize;
+    border: none;
+    font-size: 18px;
+    line-height: 22px;
+    display: block;
+    text-align: left;
+}
+.item-ticket .content .btn-buy:hover{
+    background-color: gray;
+    color: #000;
 }
 
 /* end tour */
+/* contact */
+#contact {
+    width: 100%;
+    color: 000;
+    text-align: center;
+    padding: 64px calc((100% - 800px)/2);
+    
+}
+#contact > span {
+    margin: 15px 0px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22px;
+    color: rgba(0,0,0,0.6);
+    font-style: italic;
+    
+}
+#contact .content {
+    padding: 32px 0px;
+    display: flex;
+}
+#contact .content .left {
+    width: 50%;
+    list-style: none;
+    text-align: left;
+}
+.content .left > li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22px;
+}
+.content .left > li > svg {
+    margin-right: 10px;
+}
+#contact .content > form {
+    width: 50%;
+    text-align: right;
+    
+}
+.content > form .top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.content > form .top > input {
+    width: 48%;
+    
+}
+form > input {
+    width: 100%;
+}
+form .btn-send {
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+form input {
+    padding: 8px 16px;
+    border: 1px solid gray;
+}
+form input::placeholder {
+    text-transform: capitalize;
+}
+/* end contact */
+/* footer */
+#footer .bottom {
+    text-align: center;
+    padding: 64px 16px;
+}
+#footer .bottom .list-contact {
+    justify-content: center;
+    display: flex;
+    list-style: none;
+    margin-bottom: 30px;
+}
+.bottom .list-contact .icon {
+    margin-right: 5px;
+    font-size: 24px;
+    color: rgba(0,0,0,0.6);
+}
+/* end footer */
+/* modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    
+    justify-content: center;
+    align-items: center; 
+    display: none;
+    animation: modal-in ease 0.5s;
+}
+.modal .container{
+    width: 900px;
+    min-height: 200px;
+    background-color: #fff;
+    position: relative;
+}
+.modal .container .modal-header {
+    background-color: rgb(0, 150, 136);
+    padding: 32px 16px;
+    text-align: center;
+    color: #fff;
+}
+.container .modal-header > span {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+    margin-left: 10px;
+    text-transform: capitalize;  
+}
+.container .modal-header > svg {
+    font-size: 30px;
+}
+.modal-body {
+    padding: 0px 16px;
+}
+.modal-body form > label {
+    display: block;
+    margin:15px 0px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.modal-body form > .btn-pay {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 16px;
+    background-color: rgb(0, 150, 136);
+    border: none;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+}
+.modal-body form > .btn-pay:hover {
+    background-color: gray;
+    color: #000;
+}
+.modal-footer {
+    margin-top: 20px;
+    padding: 0px 16px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+.modal-footer .btn-close {
+    padding: 8px;
+    background-color: red;
+    border: none;
+    text-transform: capitalize;
+    color: #fff;
+}
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    padding: 8px 16px;
+    background-color: rgb(0, 150, 136);
+    border: none;
+    font-size: 30px;
+    color: #fff;
+}
+.modal-close:hover {
+    background-color: gray;
+}
+.open {
+    display: flex;
+}
+/* end modal */
+@keyframes modal-in {
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

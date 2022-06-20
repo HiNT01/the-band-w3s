@@ -109,46 +109,47 @@
             </ul>
 
             <div class="list-ticket">
-                <div class="item-ticket"><img src="" alt="">
+                <div class="item-ticket"><img src="./assets/img/newyork.jpg" alt="">
                 <div class="content">
                     <h4 class="title">
-
+                        New York
                     </h4>
                     <span class="date">
-
+                        Fri 27 Nov 2016
                     </span>
                     <p>
-
+                        Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                     </p>
-                    <button class="btn-buy">buy tickets</button>
+                    <button class="btn-buy js-buy-ticket">buy tickets</button>
                 </div>
                 </div>
-                <div class="item-ticket"><img src="" alt="">
+                <div class="item-ticket"><img src="./assets/img/paris.jpg" alt="">
                 <div class="content">
                     <h4 class="title">
-
+                        Paris
                     </h4>
                     <span class="date">
-
+                        Sat 28 Nov 2016
                     </span>
                     <p>
-
+                        Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+            
                     </p>
-                    <button class="btn-buy">buy tickets</button>
+                    <button class="btn-buy js-buy-ticket ">buy tickets</button>
                 </div>
                 </div>
-                <div class="item-ticket"><img src="" alt="">
+                <div class="item-ticket"><img src="./assets/img/sanfran.jpg" alt="">
                 <div class="content">
                     <h4 class="title">
-
+                        San Francisco
                     </h4>
                     <span class="date">
-
+                        Sun 29 Nov 2016
                     </span>
                     <p>
-
+                        Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                     </p>
-                    <button class="btn-buy">buy tickets</button>
+                    <button class="btn-buy js-buy-ticket">buy tickets</button>
                 </div>
                 </div>
             </div>
@@ -166,36 +167,48 @@
             </span>
             <div class="content">
                 <ul class="left">
-                    <li><span>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i><span> 
                         Chicago, US  
                     </span></li>
-                    <li><span>
+                    <li>
+                        <i class="fa-solid fa-phone"></i><span> 
                         Phone: +00 151515
                     </span></li>
-                    <li><span>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i><span> 
                         Email: mail@mail.com/span></li>
                 </ul>
 
                 <form action="#">
-                    <input type="text" value="name" placeholder="name">
-                    <input type="email" placeholder="email">
+                    <div class="top">
+                        <input type="text" placeholder="name">
+                        <input type="email" placeholder="email">
+                    </div>
+                   
                     <input type="text" name="" id="" placeholder="message">
-                    <button class="btn-sendd" type="submit">send</button>
+                    <button class="btn-send" type="submit">send</button>
                 </form>
             </div>
         </div>
         <!-- end contact -->
         <!--footer -->
         <div id="footer">
-            <ul class="list-contact">
-                <li class="icon"></li>
-                <li class="icon"></li>
-                <li class="icon"></li>
-                <li class="icon"></li>
-                <li class="icon"></li>
-                <li class="icon"></li>
-            </ul>
-            <span>Powered by <a href=""> w3.css</a></span>
+            <img src="./assets/img/map.jpg" alt="">
+            <div class="bottom">
+                <ul class="list-contact">
+                    <li class="icon"><i class="fa-brands fa-facebook"></i></li>
+                    <li class="icon"><i class="fa-brands fa-instagram"></i></li>
+                    <li class="icon"><i class="fa-brands fa-snapchat"></i></li>
+                    <li class="icon">
+                        <i class="fa-brands fa-pinterest"></i>
+                    </li>
+                    <li class="icon"><i class="fa-brands fa-twitter"></i></li>
+                    <li class="icon"><i class="fa-brands fa-linkedin-in"></i></li>
+                </ul>
+                <span>Powered by <a href=""> w3.css</a></span>
+            </div>
+           
         </div>
 
         <!-- end footer -->
@@ -205,5 +218,38 @@
         <!-- js font -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </div>
+
+    <div class="modal js-modal">
+       <div class="container js-modal-container">
+        <div class="modal-header">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>tickes</span>
+        </div>
+        <div class="modal-body">
+            <form action="#">
+                <label for="bag">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Tickets, $15 per person</label>
+                <input type="text" name="" id="bag" placeholder="how many ?">
+                <label for="sed">
+                    <i class="fa-solid fa-user"></i>    
+                    Send To
+                </label>
+                <input type="email" id="sed" placeholder="enter email">
+                <button class="btn-pay" type="submit">pay <i class="fa-solid fa-check"></i></button>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn-close">cloes <i class="fa-solid fa-xmark"></i></button>
+            <span>need <a href="#">help ?</a></span>
+        </div>
+        <button class="modal-close js-modal-close"><i class="fa-solid fa-xmark"></i></button>
+       </div> 
+    </div>
+
+    <!-- javascript -->
+
+    
+    <script src="./assets/js/js.js"></script>
 </body>
 </html>

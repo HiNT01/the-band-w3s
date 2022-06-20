@@ -1,13 +1,20 @@
 html {
     font-size: 16px;
     font-family: 'Lato', sans-serif;
+
 }
+
 /* header */
 #header {
     width: 100%;
     background-color: #000;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
 }
 #header .nav {
     display: flex;
@@ -45,3 +52,95 @@ html {
     background-color: red;
 }
 /* end */
+
+/* banner */
+#banner {
+    margin-top: 46px;
+    padding-top: 50%;
+    background-image:  url('../img/chicago.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#banner .content {
+    position: absolute;
+    bottom: 35px;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+#banner .content .title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 800;
+}
+#banner .content > p {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 22px;
+}
+/* end banner */
+/* info */
+#infor {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 64px 16px;
+    text-align: center;
+}
+.title {
+    margin: 10px 0px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+}
+#infor > span {
+    margin: 15px 0px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22px;
+    color: rgba(0,0,0,0.6);
+    font-style: italic;
+}
+#infor > p {
+    margin: 15px 0px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22px;
+    color: rgba(0,0,0,1);
+    text-align: justify;
+    
+}
+#infor .list-info {
+    padding: 32px 0px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between ;
+}
+#infor .list-info .item-info {
+    width: 33.33%;
+    padding:15px 50px ;
+}
+.list-info .item-info .name-info {
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22px;
+}
+.list-info .item-info > img {
+    width: 100%;
+}
+/* end info */
+/* tour */
+#tour {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 64px calc((100% - 800px)/2);
+
+    
+}
+
+/* end tour */

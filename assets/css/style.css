@@ -1,7 +1,7 @@
 html {
     font-size: 16px;
     font-family: 'Lato', sans-serif;
-
+    scroll-behavior: smooth;
 }
 
 /* header */
@@ -42,6 +42,41 @@ html {
 #header .nav .item-nav:last-child .sub-nav {
     display: none;
 }
+.nav .item-nav:last-child {
+    position: relative;
+}
+
+.nav .item-nav:last-child:hover .subnav {
+    display: block;   
+}
+
+.nav .subnav {
+    padding-top: 20px;
+    background-color: #fff;
+    display: none;
+    list-style: none;
+    position: absolute;
+    top:46px;
+    left: 0;
+    z-index: 10;
+} 
+.nav .subnav li {
+    padding: 0px 70px 16px 8px;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.subnav li > a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+}
+.nav .subnav li:hover {
+    background-color: #ccc;
+}
 #header .btn-search {
     padding: 12px 24px;
     background-color: #000;
@@ -50,6 +85,7 @@ html {
 }
 #header .btn-search:hover {
     background-color: red;
+    cursor: pointer;
 }
 /* end */
 
@@ -57,7 +93,7 @@ html {
 #banner {
     margin-top: 46px;
     padding-top: 50%;
-    background-image:  url('../img/chicago.jpg');
+    background-image:  url('../../assets/img/chicago.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -194,6 +230,9 @@ html {
     width: 100%;
     display: block;
 }
+#tour .list-ticket .item-ticket  > img:hover {
+    opacity: 0.6;
+}
 #tour .list-ticket .item-ticket .content {
     padding: 15px 16px;
     background-color: #fff;
@@ -237,6 +276,7 @@ html {
 .item-ticket .content .btn-buy:hover{
     background-color: gray;
     color: #000;
+    cursor: pointer;
 }
 
 /* end tour */
@@ -273,7 +313,7 @@ html {
     line-height: 22px;
 }
 .content .left > li > svg {
-    margin-right: 10px;
+    width: 30px;
 }
 #contact .content > form {
     width: 50%;
@@ -288,10 +328,11 @@ html {
 }
 .content > form .top > input {
     width: 48%;
-    
+    border: 1px solid #ccc;  
 }
 form > input {
     width: 100%;
+    border: 1px solid #ccc; 
 }
 form .btn-send {
     padding: 8px 16px;
@@ -299,6 +340,13 @@ form .btn-send {
     color: #fff;
     text-transform: uppercase;
     margin-top: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+form .btn-send:hover {
+    background-color: gray;
+    color: rgba(0,0,0,1);
 }
 form input {
     padding: 8px 16px;
@@ -323,6 +371,10 @@ form input::placeholder {
     margin-right: 5px;
     font-size: 24px;
     color: rgba(0,0,0,0.6);
+}
+.bottom .list-contact .icon:hover {
+    opacity: 0.6;
+    cursor: pointer;
 }
 /* end footer */
 /* modal */

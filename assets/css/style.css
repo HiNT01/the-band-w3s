@@ -6,7 +6,7 @@ html {
 
 /* header */
 #header {
-    width: 100%;
+    max-width: 100%;
     background-color: #000;
     display: flex;
     justify-content: space-between;
@@ -15,6 +15,8 @@ html {
     right: 0;
     left: 0;
     z-index: 1;
+    
+    height: 46px;
 }
 #header .nav {
     display: flex;
@@ -82,10 +84,23 @@ html {
     background-color: #000;
     border: none;
     color: #fff;
+   
 }
-#header .btn-search:hover {
+#header .btn-menu:hover,
+#header .btn-search:hover  {
     background-color: red;
     cursor: pointer;
+}
+
+#header .btn-menu {
+    padding: 12px 24px;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
 }
 /* end */
 
@@ -174,7 +189,7 @@ html {
     background-color: #000;
     color: #fff;
     text-align: center;
-    padding: 64px calc((100% - 800px)/2);
+    padding: 64px calc((100vw - 800px)/2);
 }
 #tour > span {
     margin: 15px 0px;
@@ -357,6 +372,10 @@ form input::placeholder {
 }
 /* end contact */
 /* footer */
+#footer > img {
+    width: 100%;
+    height: auto;
+}
 #footer .bottom {
     text-align: center;
     padding: 64px 16px;

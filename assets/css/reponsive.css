@@ -1,0 +1,78 @@
+/* tablet */
+@media only screen and (max-width:992px) {
+    #header {
+        max-width: 100vw;
+    }
+    #tour {
+        padding: 64px 16px;
+    }
+    #contact {
+        padding: 64px 16px;
+    }
+}
+/* mobile */
+@media only screen and (max-width:768px) {
+    #header {
+        display: block;
+        overflow: hidden;
+    }
+    #header .nav {
+        display: block;
+    }
+    #header .btn-search {
+        display: none;
+    }
+    #header .btn-menu {
+        display: block;
+    }
+    #header .nav .item-nav {
+        display: block;
+    }
+    #header .nav .item-nav:first-child {
+        display: inline-block;
+    }
+    #header .nav .item-nav > a  {
+        display: block;
+    }
+    #header .nav .item-nav:hover {
+        background-color: #000;
+    }
+    #header .nav .item-nav:hover > a {
+        color: #fff;
+    }
+     .nav .subnav {
+        position: inherit;   
+       display: none;
+       list-style: none;
+       top:20px;
+       left: 0;
+       z-index: 10;
+       padding: 0px 16px;
+        background-color: #000;
+
+    }
+    .subnav li > a {
+        color: #fff;
+    }
+    .subnav > li {
+        height: 46px;
+    }
+    /* banner */
+    #banner .content {
+        display: none;
+    }
+    .content > form .top,
+    #contact .content,
+    #tour .list-ticket ,
+    #infor .list-info {
+        display: block;
+    }
+    .content > form .top > input,
+    #contact .content > form,
+    #contact .content .left,
+    #tour .list-ticket .item-ticket,
+    #infor .list-info .item-info {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
